@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT Br">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>MIGUEL - Portal Notícias</title>
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <header class="topbar">
+            <div class="topbar-left">
+                <div class="logo">
+                    <div class="logo-icon">🌐</div>
+                    <div class="logo-text">
+                        <div class="brand">MIGUEL</div>
+                        <div class="sub">PORTAL NOTÍCIAS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topbar-center">
+                <form class="search" onsubmit="return false;">
+                    <label for="q" class="sr-only">O Que Procura</label>
+                    <input id="q" type="search" placeholder="O Que Procura" />
+                    <button aria-label="Pesquisar">🔍</button>
+                </form>
+                <nav class="tags">
+                    <button class="tag primary">início</button>
+                    <button class="tag">Anime</button>
+                    <button class="tag">Jogos</button>
+                    <button class="tag">Filmes</button>
+                </nav>
+            </div>
+
+            <div class="topbar-right">
+                <div class="actions">
+                    <button class="btn outline">Registrar-se</button>
+                    <button class="btn outline">Acessar</button>
+                    <button class="btn outline">Ajuda</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="featured">
+                <article class="hero">
+                    <img src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000f08071f5b8397dafa1bffe93&ts=489882&p=fs&cid=1&sig=9c36093d612f4e1473076207c36ac11cd579d57048ff6b416963034bcd400b54&v=0" alt="Destaque" />
+                    <div class="hero-text">
+                        <h2>Dragon Ball Legends recebe localização em português do Brasil</h2>
+                        <p class="meta">Atualização totalmente localizada em PT-BR — 3 horas atrás</p>
+                        <p>Bandai Namco anunciou que a atualização de Dragon Ball Legends será lançada com conteúdo traduzido para o português do Brasil, trazendo menus, legendas e dublagens.</p>
+                        <a class="readmore" href="noticia.html">Leia mais »</a>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="recent">
+                <h3>MAIS RECENTES</h3>
+                <ul class="news-list">
+                    <li>
+                        <img src="data:image/jpeg;base64,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" alt="thumb" />
+                        <div class="item-text">
+                            <strong>Anime e jogos</strong>
+                            <p>Dragon Ball Legends agora recebe tradução brasileira para a interface e legendas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="data:image/jpeg;base64,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" alt="thumb" />
+                        <div class="item-text">
+                            <strong>Tom Holland em Dragon Ball?</strong>
+                            <p>Rumores sobre atores e adaptações viraram assunto entre os fãs.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="data:image/jpeg;base64,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" alt="thumb" />
+                        <div class="item-text">
+                            <strong>Anime e Filmes</strong>
+                            <p>Novas estreias e eventos de animes nacionais e internacionais.</p>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+
+        <footer class="site-footer">
+            <div>© 2025 MIGUEL - Portal Notícias</div>
+            <div class="notify">Receber notificações 🔔</div>
+        </footer>
+    </body>
+</html>
